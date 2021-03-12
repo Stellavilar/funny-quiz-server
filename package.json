@@ -4,19 +4,21 @@
   "description": "Server built to create API with AWS Lambda",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd server && npx nodemon index.js",
+    "deploy": "serverless deploy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Stellavilar/funny-quiz-server.git"
   },
-  "author": "Stella Vialr",
+  "author": "Stella Vilar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Stellavilar/funny-quiz-server/issues"
   },
   "homepage": "https://github.com/Stellavilar/funny-quiz-server#readme",
   "dependencies": {
+    "aws-serverless-express": "^3.4.0",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -25,6 +27,11 @@
     "express-session": "^1.17.1",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.7",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "serverless": "^2.29.0",
+    "serverless-dotenv-plugin": "^3.8.1"
+  },
+  "devDependencies": {
+    "aws-serverless-express": "^3.4.0"
   }
 }
