@@ -2,7 +2,7 @@
 
 const corsMiddleware = (req, res, next) => {
     res.header('Access-Control-Allow-Credentials', true);
-    res.header('Access-Control-Allow-Origin', req.headers.origin);
+    res.header('Access-Control-Allow-Origin', 'https://stellavilar.github.io/funny-quiz-client/#/', '*');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Access-Control-Allow-Headers, Authorization, Content-Type, Accept');
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE, PATCH');
     if (req.method === "OPTIONS") {
