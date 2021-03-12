@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '/Users/Stelou/PROJETS JS/REACT/Funny-quiz-server/.env'});
+require('dotenv').config({ path: '.env'});
 const express = require ('express');
 const session = require ('express-session');
 const bodyParser = require('body-parser');
@@ -32,7 +32,7 @@ app.use((req,res) => {
 });
 
 
-const PORT = process.env.PORT || 1234;
+const PORT = process.env.PORT;
 
 
 app.listen(PORT, () => {
